@@ -15,15 +15,23 @@
   </head>
   <body>
     <div
+      data-id="full_screen"
       class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden"
       style="font-family: Inter, 'Noto Sans', sans-serif"
     >
-      <div class="layout-container flex h-full grow flex-col">
+      <div
+        data-id="layout_container"
+        class="layout-container flex h-full grow flex-col"
+      >
         <header
+          data-id="header_container"
           class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf4] px-10 py-3"
         >
-          <div class="flex items-center gap-4 text-[#0d141c]">
-            <div class="size-4">
+          <div
+            data-class="header_items_container"
+            class="flex items-center gap-4 text-[#0d141c]"
+          >
+            <div data-class="header_items_image" class="size-4">
               <svg
                 viewBox="0 0 48 48"
                 fill="none"
@@ -36,18 +44,20 @@
               </svg>
             </div>
             <h2
+              data-class="header_items_text"
               class="text-[#0d141c] text-lg font-bold leading-tight tracking-[-0.015em]"
             >
               AI Assistant
             </h2>
           </div>
-          <div class="flex flex-1 justify-end gap-8">
+          <div data-id="header_box" class="flex flex-1 justify-end gap-8">
             <button
+              data-id="header_box_button"
               class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#e7edf4] text-[#0d141c] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
             >
               <div
                 class="text-[#0d141c]"
-                data-icon="Gear"
+                data-id="Gear_icon_container"
                 data-size="20px"
                 data-weight="regular"
               >
@@ -65,6 +75,7 @@
               </div>
             </button>
             <div
+              data-id="header_box_profile_image"
               class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
               style="
                 background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB305Rsnsclh-qJDYcyfNfwvL9akiMBBqsHevnzulmtm5wJci6w_77eim07GGOSdzpqPMNeiIW0W759QZK_CEuhSxeOj5Ke3mNLLEii-Ak8BW9luRgKlLTlZZuMMnrMHPCX5tAVy1DFbnLdZVb3k0a8Om1H5Fz8QiBuiFMgSq88BL-HHN2OXfrHYe5dhkXIxkKdiR4fsr8ZGkf9MqnsluHzxnuVZt1X3rfVPSC7EV5rXxkPGKRmwCAwoT7yUNPDlxrF8mlcy1o9V1ls');
